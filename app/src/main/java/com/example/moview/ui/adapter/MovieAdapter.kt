@@ -1,4 +1,4 @@
-package com.example.moview.ui
+package com.example.moview.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
