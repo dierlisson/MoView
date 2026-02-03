@@ -10,29 +10,31 @@ if (localPropertiesFile.exists()) {
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    alias(libs.plugins.kotlin.kapt)
     alias(libs.plugins.navigation.safeargs.kotlin)
     id("kotlin-parcelize") // Para passar objetos entre telas
 }
 
 android {
     namespace = "com.example.moview"
-    compileSdk = 34
+    compileSdk = 36
 
     buildFeatures {
         viewBinding = true
+        dataBinding = true
         buildConfig = true // Para ler a API Key com segurança
     }
 
     defaultConfig {
         applicationId = "com.example.moview"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         val apiKey = localProperties.getProperty("TMDB_API_KEY") ?: ""
-        buildConfigField("String", "TMDB_API_KEY", "\"$apiKey\"")
+        buildConfigField("String", "TMDB_API_KEY", """"$apiKey"""")
     }
 
     buildTypes {

@@ -39,7 +39,7 @@ class HomeFragment : Fragment() {
 
     private fun setupRecyclerView() {
         adapter = MovieAdapter { movie ->
-            val action = HomeFragmentDirections.actionHomeToDetail(movie)
+            val action = HomeFragmentDirections.actionHomeFragmentToDetailFragment(movie)  //actionHomeToDetail(movie)
             findNavController().navigate(action)
         }
         binding.rvMovies.adapter = adapter
