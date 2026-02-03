@@ -15,7 +15,7 @@ O app consome a **API do TMDB (The Movie Database)** para listar filmes populare
 
 | Tela Inicial (Home) | Detalhes do Filme |
 |:---:|:---:|
-| <img src="docs/home_screenshot.png" width="200" /> | <img src="docs/detail_screenshot.png" width="200" /> |
+| <img src="https://github.com/user-attachments/assets/a25017e8-d2ca-4db0-ad3f-eac576118538" width="200" /> | <img src="https://github.com/user-attachments/assets/51c64aec-31f8-4ad4-b8aa-9e125a2feefe" width="200" /> |
 
 
 ---
